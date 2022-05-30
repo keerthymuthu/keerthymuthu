@@ -15,7 +15,7 @@ import java.util.List;
 public class BrokenLinks {
 
     public static void main(String[] args) throws IOException {
-        String homePage="http://google.com";
+        String homePage="https://demoqa.com/broken";
         String url="";
         int respCode = 200;
         HttpURLConnection huc=null;
@@ -40,7 +40,7 @@ public class BrokenLinks {
                 continue;
             }*/
             huc= (HttpURLConnection) new URL(url).openConnection();
-
+            huc.setRequestMethod("HEAD");
             respCode = huc.getResponseCode();
             System.out.println("Response code: "+respCode);
             if(respCode>=400)
