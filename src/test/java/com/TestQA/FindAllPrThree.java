@@ -6,8 +6,8 @@ public class FindAllPrThree {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter a String: ");
+		Scanner sc=new Scanner(System.in);
 		String test=sc.nextLine();
 		String alp=test.replaceAll("[^a-zA-Z]", "");
 		System.out.println(alp);
