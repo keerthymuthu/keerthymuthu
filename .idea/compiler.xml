@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="com.TestQA" target="1.5" />
+      <module name="com.TestQA" target="1.8" />
       <module name="Selenium4" target="1.8" />
     </bytecodeTargetLevel>
   </component>
